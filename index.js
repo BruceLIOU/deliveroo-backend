@@ -8,7 +8,7 @@ app.use(formidable());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.status(404).json({
+  res.status(200).json({
     restaurant: {
       path: "Le Pain Quotidien",
       name: "Le Pain Quotidien - Montorgueil",
