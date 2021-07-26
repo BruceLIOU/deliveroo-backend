@@ -1,14 +1,11 @@
 const express = require("express");
-const formidable = require("express-formidable");
 const cors = require("cors");
-require("dotenv").config();
 
 const app = express();
-app.use(formidable());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.status(200).json({
+  return res.status(200).json({
     restaurant: {
       path: "Le Pain Quotidien",
       name: "Le Pain Quotidien - Montorgueil",
